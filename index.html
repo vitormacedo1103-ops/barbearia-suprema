@@ -393,8 +393,20 @@
           padding-left: 20px;
           padding-right: 20px;
         }
-        /* a moldura dourada deslocada da foto não avança até a borda da tela */
-        .hero-photo { margin-right: 10px; }
+        /* foto do topo: no celular a moldura dourada é a borda do próprio
+           cartão (alinhada à foto, sem o deslocamento do desktop) e a
+           legenda respira dentro da moldura, sem cortar nas bordas */
+        .hero-photo {
+          border: 2px solid var(--gold-bright);
+          border-radius: 14px;
+        }
+        .hero-photo::before { display: none; }
+        .hero-photo figcaption {
+          box-sizing: border-box;
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-bottom: 12px;
+        }
 
         /* separação visível entre as seções */
         #servicos { border-bottom: 1.5px solid color-mix(in srgb, var(--gold) 45%, var(--line)); }
