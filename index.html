@@ -384,6 +384,18 @@
         /* botão de WhatsApp do cabeçalho escondido: o flutuante já cobre o celular */
         .bar > .btn { display: none; }
 
+        /* respiro lateral das duas primeiras seções (hero e serviços),
+           igual ao espaçamento lateral do restante da página */
+        .hero .wrap,
+        #servicos .wrap {
+          box-sizing: border-box;
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        /* a moldura dourada deslocada da foto não avança até a borda da tela */
+        .hero-photo { margin-right: 10px; }
+
         /* separação visível entre as seções */
         #servicos { border-bottom: 1.5px solid color-mix(in srgb, var(--gold) 45%, var(--line)); }
         .gallery-sec {
