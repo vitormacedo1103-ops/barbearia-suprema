@@ -220,16 +220,6 @@
       .shot .t { font-weight: 700; font-size: 16px; display: block; }
       .shot .s { color: var(--ink-soft); font-size: 14px; display: flex; align-items: center; gap: 6px; margin-top: 2px; }
       .shot .s svg { color: var(--gold-ink); flex: none; }
-      .more-posts { margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-      .more-posts .lbl { font-weight: 700; font-size: 15px; margin-right: 2px; }
-      .chip {
-        display: inline-flex; align-items: center; gap: 7px;
-        min-height: 40px; padding: 8px 15px;
-        border: 1.5px solid var(--line); border-radius: 999px;
-        text-decoration: none; font-weight: 600; font-size: 14.5px;
-      }
-      .chip:hover { border-color: var(--gold); }
-
       /* about / 5 anos */
       .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
       .art-wrap { position: relative; aspect-ratio: 1 / 1; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); align-self: center; }
@@ -349,9 +339,10 @@
         .wa-float {
           right: 12px;
           bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-          min-height: 52px; padding: 12px 17px; font-size: 15px; gap: 8px;
+          min-height: 44px; padding: 7px 11px; font-size: 12.5px; gap: 5px;
           max-width: calc(100vw - 24px);
         }
+        .wa-float svg { width: 17px; height: 17px; }
       }
 
       /* ---------- celulares (<=480px) ---------- */
@@ -423,7 +414,6 @@
 
         /* galeria: moldura com borda em cada foto */
         .shot .frame { border: 1.5px solid color-mix(in srgb, var(--gold) 55%, var(--line)); }
-        .chip { border-color: color-mix(in srgb, var(--gold) 55%, var(--line)); }
 
         /* seção "5 anos": borda na arte comemorativa */
         .art-wrap { border: 1.5px solid color-mix(in srgb, var(--gold) 60%, var(--line)); }
@@ -613,13 +603,6 @@
                 </figcaption>
               </figure>
             </a>
-          </div>
-          <div class="more-posts">
-            <span class="lbl">Mais no Instagram:</span>
-            <a class="chip" href="https://www.instagram.com/reel/Dd2XJUxJ7Xu/" target="_blank" rel="noopener">Barba com navalha ↗</a>
-            <a class="chip" href="https://www.instagram.com/supremabarbeariasp/reel/DQEcjCOiGBg/" target="_blank" rel="noopener">Toalha quente ↗</a>
-            <a class="chip" href="https://www.instagram.com/elan.barber_/reel/DO95WSHDi_j/" target="_blank" rel="noopener">Corte kids ↗</a>
-            <a class="chip" href="https://www.instagram.com/supremabarbeariasp/" target="_blank" rel="noopener">@supremabarbeariasp ↗</a>
           </div>
         </div>
       </section>
