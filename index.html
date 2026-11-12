@@ -379,6 +379,35 @@
         .hours li { flex-wrap: wrap; row-gap: 0; }
       }
 
+      /* ---------- bordas no celular (<=768px) e cabeçalho limpo ---------- */
+      @media (max-width: 768px) {
+        /* botão de WhatsApp do cabeçalho escondido: o flutuante já cobre o celular */
+        .bar > .btn { display: none; }
+
+        /* separação visível entre as seções */
+        #servicos { border-bottom: 1.5px solid color-mix(in srgb, var(--gold) 45%, var(--line)); }
+        .gallery-sec {
+          border-top: 1.5px solid color-mix(in srgb, var(--gold) 45%, var(--line));
+          border-bottom: 1.5px solid color-mix(in srgb, var(--gold) 45%, var(--line));
+        }
+        #historia { border-bottom: 1.5px solid color-mix(in srgb, var(--gold) 45%, var(--line)); }
+        .visit-sec { border-top: 1.5px solid rgba(201, 162, 39, 0.55); }
+
+        /* cartões de serviços e nota de preços com borda dourada sutil */
+        .service { border: 1.5px solid color-mix(in srgb, var(--gold) 55%, var(--line)); }
+        .price-note { border: 1.5px solid color-mix(in srgb, var(--gold) 55%, var(--line)); }
+
+        /* galeria: moldura com borda em cada foto */
+        .shot .frame { border: 1.5px solid color-mix(in srgb, var(--gold) 55%, var(--line)); }
+        .chip { border-color: color-mix(in srgb, var(--gold) 55%, var(--line)); }
+
+        /* seção "5 anos": borda na arte comemorativa */
+        .art-wrap { border: 1.5px solid color-mix(in srgb, var(--gold) 60%, var(--line)); }
+
+        /* painéis de horários e endereço sobre o fundo escuro */
+        .panel { border: 1.5px solid rgba(201, 162, 39, 0.55); }
+      }
+
       /* ---------- faixa intermediária 901–1024px (desktop >1024 intocado) ---------- */
       @media (min-width: 901px) and (max-width: 1024px) {
         .hero-grid { gap: 32px; }
